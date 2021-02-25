@@ -1,2 +1,2 @@
-from proyect_app import app
+from src import app
 app.run()
