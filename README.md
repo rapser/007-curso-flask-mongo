@@ -1,11 +1,50 @@
-# App de Flask con MongoDB
+# Flask con MongoDB
 
-## What is CodeIgniter?
+Creamos un entorno virtual
 
-Esta es la app que creamos en el curso de Flask con MongoDB
+```sh
+$ pip install virtualenv
+$ virtualenv venv
+```
 
-## Instalación
+Para ejecutar el entorno virtual en MacOS usamos lo siguiente
 
-Instala las dependencias del requirement.txt y luego 
+```sh
+$ source venv/bin/activate
+```
 
-`python run.py`
+Si queremos salir del entorno virtual usamos
+
+```sh
+$ deactivate
+```
+
+## Instalación de módulos
+
+En el terminal agregamos los modulos necesarios para el proyecto
+
+```sh
+$ pip install flask pymongo
+```
+
+### Requerimientos
+
+Podemos instalar los modulos desde un archivo requeriments de la siguiente forma
+
+```sh
+$ pip install -r requirements.txt
+```
+
+Para generar este archivo en nuestro proyecto usamos lo siguiente
+
+```sh
+$ pip freeze > requirements.txt
+```
+
+## Ejecución
+
+Si contamos con los modulos y el entorno virtual activado, corremos el proyecto con
+
+```sh
+$ python run.py
+```
