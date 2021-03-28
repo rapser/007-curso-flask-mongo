@@ -1,7 +1,7 @@
 from flask import Blueprint, render_template, request, redirect, flash, url_for, jsonify
 from flask_user import login_required
 
-from src import app
+import main
 from .models import Book, BookForm, Category, Dimention, Address, AddressForm, Tag
 
 bookBp = Blueprint('book',__name__, url_prefix='/book')
